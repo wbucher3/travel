@@ -1,26 +1,8 @@
-<h1>Gas Calculator!</h1>
-
-<form gasForm=ngForm (ngSubmit)="onSubmit()">
-
-  <div>
-    <label>Miles</label>
-    <input type="number" name ="miles" [(ngModel)]="miles" required>
+<div class="nav-title">
+  <div *ngFor="let item of list | keyvalue"  >
+    <p [ngClass]="{'isActive': item.value.active, 'notActive': !item.value.active}">{{item.value.name}}</p>
   </div>
-
-  <div>
-    <label>Car</label>
-    <select name="car" [(ngModel)]="car" required>
-      <option value="" selected disabled hidden>Select Car</option>
-      <option value="miata">Miata</option>
-      <option value="jeep">Jeep</option>
-    </select>
-  </div>
-  <button type="submit">Calculate</button>
-
-</form>
-
-<div>
-  <h2>Quick Calculations</h2>
-  <p>Work</p>
-  
 </div>
+
+<main (scroll)="ping($event)">
+</main>

@@ -1,0 +1,27 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-title {
+    position: fixed;
+    margin: 20% auto auto 2em;
+    width: 50%;
+    height: 50%;
+    font-size: 32px;
+}
+
+main {
+    height: 1400px;
+    background-color: #99badd;
+    margin: 0;
+    padding: 0;
+}
+
+.isActive {
+    font-size: 48px;
+    color: white;
+}
+
+.notActive {
+    opacity: 25%;
+}
